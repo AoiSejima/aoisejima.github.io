@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Extra Light'), url('ITCAvantGardeStdXLt.woff') format('woff');
+}
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Extra Light Oblique'), url('ITCAvantGardeStdXLtObl.woff') format('woff');
+}
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Medium'), url('ITCAvantGardeStdMd.woff') format('woff');
+}
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Medium Oblique'), url('ITCAvantGardeStdMdObl.woff') format('woff');
+}
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Demi'), url('ITCAvantGardeStdDemi.woff') format('woff');
+}
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Bold'), url('ITCAvantGardeStdBold.woff') format('woff');
+}
+
+body {
+    background: white;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 75%, rgb(207, 221, 255) 100%);
+    margin: 0;
+    font-family: 'ITC Avant Garde Gothic Std Extra Light', 'ITC Avant Garde Gothic Std Medium', 'ITC Avant Garde Gothic Std Demi', 'ITC Avant Garde Gothic Std Bold', Verdana, sans-serif
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    top: 1%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 1vh 2vw 2vh 2vw;
+    z-index: 10;
+}
+
+#nav-logo-img {
+    width: 5%;
+}
+
+#nav-list {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+button {
+    background: transparent;
+    border: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    height: 3vh;
+    line-height: 0pt;
+}
+
+a {
+    color: rgb(23, 23, 23);
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+}
+a:hover {
+    font-family: 'ITC Avant Garde Gothic Std Medium';
+}
+
+h2 {
+    font-size: 13pt;
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+}
+h2:hover {
+    font-family: 'ITC Avant Garde Gothic Std Medium';
+}
+
+section {
+    position: sticky;
+    top: 15vh;
+    z-index: 10;
+}
+
+/* #toggle-work-TOC {
+    position: absolute;
+    text-align: right;
+    margin-left: 102rem;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+} */
+ 
+#toggle-about, #toggle-contact {
+    position: absolute;
+    width: 70%;
+    height: 60vh;
+    padding: 4%;
+    top: 35vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1rem 0 rgba(148, 148, 148, 0.3); 
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem;
+    display: none;
+}
+
+#grid-container-about {
+    display: grid;
+    grid-gap: 7rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* .grid-content-about {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+} */
+
+#about-img {
+    width: 100%;
+}
+
+h3 {
+    font-size: 20pt;
+    font-family: 'ITC Avant Garde Gothic Std Medium';
+}
+
+#about-p {
+    font-size: 16pt;
+}
+
+#list-icon li {
+    list-style-type: none;
+    display: inline;
+    text-align: justify;
+    margin-right: 1rem;
+}
+.skill-icon {
+    width: 5%;
+}
+
+#logo-geometric {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: -10rem;
+}
+
+h1 {
+    position: sticky;
+    top: 1rem;
+    color: black;
+    font-size: 30pt;
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    text-align: center;
+
+    /* text-align: left;
+    margin-left: 2rem;
+    top: 10rem; */
+}
+
+main {
+    margin-top: -10rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, 20rem);
+    grid-gap: 3rem;
+    margin: auto 15rem auto 15rem;
+    justify-items: stretch;
+    box-sizing: border-box;
+    /* align-items: inherit; */
+    /* align-items: stretch; */
+    /* background: rgb(152, 152, 152); */
+}
+.grid-content-work img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-content-work img:hover {
+    /* object-fit: scale-down; */
+    transition: 0.5s;
+    opacity: 0.8;
+}
+/* one */
+#one {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+#two {
+    grid-column: 3/5;
+    grid-row: 1;
+}
+#three {
+    grid-column: 3/5;
+    grid-row: 2;
+}
+/* two */
+#four {
+    grid-column: 1;
+    grid-row: 3;
+}
+#five {
+    grid-column: 1;
+    grid-row: 4;
+}
+#six {
+    grid-column: 2/5;
+    grid-row:  3/5;
+}
+/* three */
+#seven {
+    grid-column: 1/5;
+    grid-row: 5;
+}
+/* four */
+#eight {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+#nine {
+    grid-column: 3/5;
+    grid-row:  6;
+}
+#ten {
+    grid-column: 2/5;
+    grid-row: 7;
+}
+/* five */
+#eleven {
+    grid-column: 1/2;
+    grid-row: 7;
+}
+/* #twelve {
+    grid-column: 2/5;
+    grid-row:  3/5;
+} */
+
+
+
+.title {
+    font-family: 'ITC Avant Garde Gothic Std Medium Oblique';
+}
+.work-description {
+    /* border: 1px solid green; */
+    width: 35rem;
+    margin-top: 14rem;
+    font-size: 14pt;
+    line-height: 19pt;
+}
+.italicise {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light Oblique';
+}
+
+h4 {
+    font-size: 30pt;
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    text-align: left;
+    /* line-height: 30pt; */
+}
+
+h4:hover {
+    font-family: 'ITC Avant Garde Gothic Std Medium';
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.gallery-column {
+    flex: 50%;
+    max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.gallery-column {
+    flex: 100%;
+    max-width: 100%;
+}
+}
