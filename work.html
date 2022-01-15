@@ -11,63 +11,97 @@
     <script type="text/javascript" src="./script.js" defer></script>
 </head>
 <body>
-    <nav>
-        <div id="nav-logo">
-            <a href="https://aoisejima.github.io/aoisejima.github.io/" target="_blank">
-                <!-- <img id="nav-logo-img" src="assets/img/logoaoi.png" alt="logo image"/> -->
-                <img id="nav-logo-img" src="assets/img/Vector.png" alt="logo image"/>
-            </a>
-        </div>
-        <ul id="nav-list">
-            <li>
-                <button type="button" onclick="buttonActivateTabWebsite()">
-                    <a id="nav-work" href="#tab-website"><h2>website</h2></a>
-                </button>
+    <nav class="nav">
+        <a id="nav-logo" href="https://aoisejima.github.io/aoisejima.github.io/">
+            <!-- <img src="assets/img/logoaoi.png" alt="logo image"/> -->
+            <img src="assets/img/Vector.png" alt="Image: Logo"/>
+        </a>   
+        <!-- <ul id="nav-ul">
+            <li class="show">
+                <a data-title="allwork" href="work.html">
+                    <h2>ALL WORKS</h2>
+                </a>
             </li>
-            <li>
-                <button type="button" onclick="buttonTabEditorial()">
-                    <a id="nav-work" href="#tab-editorial"><h2>editorial</h2></a>
-                </button>
+            <li class="show">
+                <a data-title="book" href="#book">
+                    <h4>BOOK</h4>
+                </a>
             </li>
-            <li>
-                <button type="button" onclick="buttonTabIllustration()">
-                    <a id="nav-work" href="#tab-illustration"><h2>illustration</h2></a>
-                </button>
+            <li class="show">
+                <a data-title="illustration" href="#illustration">
+                    <h4>ILLUSTRATION/animation</h4>
+                </a>
             </li>
-            <li>
+            <li class="about">
+                <a data-title="About" href="#drawings">
+                    <h4>DRAWINGS</h4>
+                </a>
+            </li>
+            <li class="show">
+                <a data-title="lightandshdow" href="#lightandshadow">
+                    <h4>LIGHT & SHADOW</h4>
+                </a>
+            </li>
+            <li class="nav-li">
                 <button type="button" onclick="buttonAbout()">
-                    <h2>about |</h2>
+                    <h2>ABOUT</h2>
                 </button>
             </li>
-            <li>
+            <li class="nav-li">
                 <button type="button" onclick="buttonContact()">
-                    <h2>contact |</h2>
+                    <h2>CONTACT</h2>
                 </button>
             </li>
         </ul>
+        <ul>
+            <li>
+                <a id="backToTop" href="#"><i id="arrow-goUp"></i></a>
+            </li>
+        </ul> -->
+        <ul>
+            <!-- <li>
+                <a class="show" id="allwork" data-title="All Work" href="#allWork-gallery">ALL WORK</a>
+            </li> -->
+            <li>
+                <a class="show" data-title="Website App" href="#websiteApp-gallery"><h2>WEBSITE/APP</h2></a>
+            </li>
+            <li>
+                <a class="show" data-title="Typography" href="#typography-gallery"><h2>TYPOGRAPHY</h2></a>
+            </li>
+            <li>
+                <a class="show" data-title="Illustration" href="#illustration-gallery"><h2>ILLUSTRATION</h2></a>
+            </li>
+            <li>
+                <a class="show" data-title="Light and Shadow" href="#lightandshadow-gallery"><h2>LIGHT & SHADOW</h2></a>
+            </li>
+            <li>
+                <a class="show" data-title="Photography" href="#photography-gallery"><h2>PHOTOGRAPHY</h2></a>
+            </li>       
+        </ul>
     </nav>
-    <section>
-        </div>
+    <aside>
         <div id="toggle-about">
-            <div id="grid-container-about">
-                <div class="grid-content-about">
-                    <img id="about-img" src="assets/img/aboutimg.jpg" alt=""/>
+            <div id="container-about">
+                <div class="content-about">
+                    <img id="about-img" src="assets/img/aboutimg.jpg" alt="Image: Me"/>
                 </div>
-                <div class="grid-content-about">
-                    <h3 >Hi, I'm Aoi!</h3>
-                    <p id="about-p"> A 3rd year student in BFA Communication Design Major at Parsons School of Design, The New School.<br><br>
-                        An aspiring UX/UI Designer...
+                <div class="content-about">
+                    <h3 >Aoi is...</h3>
+                    <p>
+                        A 3rd year student in BFA Communication Design Major at Parsons School of Design, The New School.<br><br>
+                        Based in New York City<br><br>
+                        An aspiring Graphic Designer :)
                     </p>
                     <h3>Skills</h3>
-                    <ul id="list-icon">
-                        <li><img class="skill-icon" src="assets/img/icon/illustrator-icon.png" alt="Adobe Illustrator (icon)"/></li>
-                        <li><img class="skill-icon" src="assets/img/icon/photoshop-icon.png" alt="Adobe Photoshop (icon)"/></li>
-                        <li><img class="skill-icon" src="assets/img/icon/indesign-icon.png" alt="Adobe InDesign (icon)"/></li>
-                        <li><img class="skill-icon" src="assets/img/icon/premiere-pro-icon.png" alt="Adobe PremierePro (icon)"/></li>
-                        <li><img class="skill-icon" src="assets/img/icon/html-5-icon.png" alt="HTML (icon)"/></li>
-                        <li><img class="skill-icon" src="assets/img/icon/css-3-icon.png" alt="CSS (icon)"/></li>
-                        <li><img class="skill-icon" src="assets/img/icon/figma.png" alt="figma (icon)"/></li>
-                        <li><img class="skill-icon" src="assets/img/icon/procreate.png" alt="Procreate (icon)"/></li>
+                    <ul class="icon">
+                        <li><img src="assets/img/icon/illustrator-icon.png" alt="Adobe Illustrator (icon)"/></li>
+                        <li><img src="assets/img/icon/photoshop-icon.png" alt="Adobe Photoshop (icon)"/></li>
+                        <li><img src="assets/img/icon/indesign-icon.png" alt="Adobe InDesign (icon)"/></li>
+                        <li><img src="assets/img/icon/premiere-pro-icon.png" alt="Adobe PremierePro (icon)"/></li>
+                        <li><img src="assets/img/icon/html-5-icon.png" alt="HTML (icon)"/></li>
+                        <li><img src="assets/img/icon/css-3-icon.png" alt="CSS (icon)"/></li>
+                        <li><img src="assets/img/icon/figma.png" alt="figma (icon)"/></li>
+                        <li><img src="assets/img/icon/procreate.png" alt="Procreate (icon)"/></li>
                     </ul>
                     <h3>Resume</h3>
                     <p><a>download pdf</a></p>
@@ -75,85 +109,81 @@
             </div>
         </div>
         <div id="toggle-contact">
-            <h3 >Thank You for Your Interest!</h3>
-            <ul>
-                <li><a href = "mailto: sejia949@newschool.edu"><i style="font-size:24px" class="fa">&#xf003;</i>Send Email</a></li>
-                <li></li>
+            <h3>Thank you for your interest!</h3>
+            <a href="mailto: sejia949@newschool.edu">
+                <p>
+                    <i style="font-size:24px" class="fa">&#xf003;</i>
+                    Contact Aoi
+                </p>
+            </a>
+            <ul class="icon">
+                <li><img src="assets/img/icon/illustrator-icon.png" alt="Img: linkedIn"/></li>
+                <li><img src="assets/img/icon/photoshop-icon.png" alt="Img: Instagram"/></li>
             </ul>
         </div>
-    </section>
+    </aside>
     <main>
-        <h1>All Work</h1>
-        <div class="wrapper">
-            <!-- one -->
-            <div class="grid-content-work" id="one">
-                <img src="assets/img/websiteDesign/inPraiseOfShadow/praisePCMockup1.jpg" alt="Adobe Illustrator (icon)"/>
-            </div>
-            <div class="grid-content-work" id="two">
-                <img src="assets/img/websiteDesign/treasureHunt/treasurePCMockup1.jpg" alt="Adobe Illustrator (icon)"/>
-            </div>
-            <div class="grid-content-work" id="three">
-                <img src="assets/img/illustration/bubbles.JPG" alt="Adobe Illustrator (icon)"/>
-            </div>
-            <!-- two -->
-            <div class="grid-content-work" id="four">
-                <img src="assets/img/pencilDrawing/grandpa.jpg" alt="Adobe Illustrator (icon)"/>
-            </div>
-            <div class="grid-content-work" id="five">
-                <img src="assets/img/typographyDesign/interviewYu/trustInterview-cover.jpg" alt="Adobe Illustrator (icon)"/>
-            </div>
-            <div class="grid-content-work" id="six">
-                <img src="assets/img/typographyDesign/mimic/IMG_9013.JPG" alt="Adobe Illustrator (icon)"/>
-            </div>
-            <!-- three -->
-            <div class="grid-content-work" id="seven">
-                <img src="assets/img/typographyDesign/wikibookMoon/moonCycle-coverBack.jpg" alt="Adobe Illustrator (icon)"/>
-            </div>
-            <!-- four -->
-            <div class="grid-content-work" id="eight">
-                <img src="assets/img/typographyDesign/croppedLetters/croppedLetters-AdobeCaslonProRegular-BJMN.jpg" alt="Adobe Illustrator (icon)"/>
-            </div>
-            <div class="grid-content-work" id="nine">
-                <img src="assets/img/websiteDesign/AAPI/AAPI-1-LandingPage.png" alt="Adobe Illustrator (icon)"/>
-            </div>
-            <!-- five -->
-            <div class="grid-content-work" id="ten">
-                <img src="assets/img/illustration/findflow-english.jpg" alt="Adobe Illustrator (icon)"/>
-            </div>
-            <div class="grid-content-work" id="eleven">
-                <img src="assets/img/illustration/ocean.jpg" alt="Adobe Illustrator (icon)"/>
-            </div>
-        </div>
-        <div>
-        <!-- <div class="gallery-column">
-            <a href="https://aoisejima.github.io/aoisejima.github.io/" target="_blank">
-                <img src="assets/img/typographyDesign/interviewYu/trustInterview-cover.jpg" alt="logo"/>
-            </a>
-            <a href="https://aoisejima.github.io/aoisejima.github.io/" target="_blank">
-                <img src="assets/img/typographyDesign/wikibookMoon/moonCycle-coverBack.jpg" alt="logo"/>
-            </a>
-            <a href="https://aoisejima.github.io/aoisejima.github.io/" target="_blank">
-                <img src="assets/img/illustration/bubbles.JPG" alt="logo"/>
-            </a>
-        </div>
-        <div class="gallery-column">
-            <a href="https://aoisejima.github.io/aoisejima.github.io/" target="_blank">
-                <img src="assets/img/illustration/bubbles.JPG" alt="logo"/>
-            </a>
-            <a href="https://aoisejima.github.io/aoisejima.github.io/" target="_blank">
-                <img src="assets/img/illustration/自分の流れ_Portfolio.jpg" alt="logo"/>
-            </a>
-        </div>
-        <div class="gallery-column">
-            <a href="https://aoisejima.github.io/aoisejima.github.io/" target="_blank">
-                <img src="assets/img/websiteDesign/inPraiseOfShadow/praisePCMockup2.jpg" alt="logo"/>
-            </a>
-            <a href="https://aoisejima.github.io/aoisejima.github.io/" target="_blank">
-                <img src="assets/img/websiteDesign/treasureHunt/treasurePCMockup1.jpg" alt="logo"/>
-            </a>
-            <a href="https://aoisejima.github.io/aoisejima.github.io/" target="_blank">
-                <img src="assets/img/websiteDesign/techCollection/techCollection_PC.jpg" alt="logo"/>
-            </a>
-        </div> -->
+        <!-- <section id="allWork-gallery" class="img-shrink" class="content">
+            one
+            <img class="work-one" src="assets/img/websiteDesign/inPraiseOfShadow/praisePCMockup1.jpg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-two" src="assets/img/websiteDesign/treasureHunt/treasurePCMockup1.jpg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-three" src="assets/img/illustration/bubbles.JPG" alt="Adobe Illustrator (icon)"/>
+            two
+            <img class="work-four" src="assets/img/pencilDrawing/grandpa.jpg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-five" src="assets/img/typographyDesign/interviewYu/trustInterview-cover.jpg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-six" src="assets/img/typographyDesign/mimic/IMG_9013.JPG" alt="Adobe Illustrator (icon)"/>
+            three
+            <img class="work-seven" src="assets/img/typographyDesign/croppedLetters/croppedLetters-AdobeCaslonProRegular-BJMN.jpg" alt="Adobe Illustrator (icon)"/>
+            four
+            <img class="work-eight" src="assets/img/typographyDesign/wikibookMoon/moonCycle-coverBack.jpg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-nine" src="assets/img/websiteDesign/AAPI/AAPI-1-LandingPage.png" alt="Adobe Illustrator (icon)"/>
+            five
+            <img class="work-ten" src="assets/img/illustration/findflow-english.jpg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-eleven" src="assets/img/illustration/ocean.jpg" alt="Adobe Illustrator (icon)"/>
+        </section> -->
+        <section a id="websiteApp-gallery" class="img-shrink" class="content">
+            <img class="work-1" src="assets/img/websiteDesign/AAPI/AAPI-1-LandingPage.png" alt="Adobe Illustrator (icon)"/>
+            <img class="work-2" src="assets/img/websiteDesign/inPraiseOfShadow/praisePCMockup1.jpg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-3" src="assets/img/websiteDesign/techCollection/techCollection_PC.jpg" alt="Adobe Illustrator (icon)"/>
+            
+            <img class="work-four" src="assets/img/websiteDesign/treasureHunt/treasurePCMockup1.jpg" alt="Adobe Illustrator (icon)"/>
+        </section>
+        <section a id="typography-gallery" class="img-cover" class="content">
+            <img class="work-1" src="assets/img/typographyDesign/invisible/DSC_2391.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-2" src="assets/img/typographyDesign/mimic/IMG_9014.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-3" src="assets/img/typographyDesign/interviewYu/trustInterview-cover.jpg" alt="Adobe Illustrator (icon)"/>
+            
+            <img class="work-4" src="assets/img/typographyDesign/wikibookMoon/moonCycle-coverBack.jpg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-5" src="assets/img/typographyDesign/croppedLetters/croppedLetters-AdobeCaslonProRegular-BJMN.jpg" alt="Adobe Illustrator (icon)"/>
+        </section>
+        <section a id="illustration-gallery" class="img-cover" class="content">
+            <img class="work-1" src="assets/img/illustration/findflow-english.jpg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-2" src="assets/img/illustration/bubbles.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-3" src="assets/img/illustration/omoide.jpg" alt="Adobe Illustrator (icon)"/>
+
+            <img class="work-4" src="assets/img/illustration/ocean.jpg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-5" src="assets/img/illustration/perspective2.png" alt="Adobe Illustrator (icon)"/>
+        </section>
+        <section a id="lightandshadow-gallery" class="img-cover" class="content">
+            <img class="work-1" src="assets/img/lightAndShadow/barrier2.jpeg" alt="Adobe Illustrator (icon)"/>
+            <img class="work-2" src="assets/img/lightAndShadow/redAndBlue.jpg" alt="Adobe Illustrator (icon)"/>
+        </section>
+        <section a id="photography-gallery" class="img-cover" class="content">
+            <img class="work-1" src="assets/img/photography/rosabel.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-2" src="assets/img/photography/building2.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-3" src="assets/img/photography/building.JPG" alt="Adobe Illustrator (icon)"/>
+
+            <img class="work-4" src="assets/img/photography/lightcloud.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-5" src="assets/img/photography/lighttree.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-6" src="assets/img/photography/cloudpond.jpeg" alt="Adobe Illustrator (icon)"/>
+
+            <img class="work-7" src="assets/img/photography/tunnel.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-8" src="assets/img/photography/forest.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-9" src="assets/img/photography/lightstand.jpeg" alt="Adobe Illustrator (icon)"/>
+
+            <img class="work-10" src="assets/img/photography/japan2.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-11" src="assets/img/photography/japanmom.JPG" alt="Adobe Illustrator (icon)"/>
+            <img class="work-12" src="assets/img/photography/japan.JPG" alt="Adobe Illustrator (icon)"/>
+        </section>
     </main>
 </body>
