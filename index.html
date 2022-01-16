@@ -18,48 +18,20 @@
         <p><i class="line" id="line2"></i></p>
         <p><i class="line" id="line3"></i></p>
         <p><i class="line" id="line4"></i></p> -->
-        <h1 class="header-text" id="header-h1">
-            AOI SEJIMA
-        </h1>
+        <h1 class="header-text" id="header-h1">AOI SEJIMA</h1>
         <p class="header-text" id="header-p">
             A 3rd year student in BFA Communication Design Major at Parsons School of Design, The New School.<br><br>
             An aspiring UX/UI Designer seeking opportunity to develop projects to help people out in society.<br>
         </p>
-        <a id="arrowGoDown" href="#featured-work-gallery">
-            <p><i id="arrow-goDown"></i></p>
-        </a>
+        <a href="#featuredWork-gallery"><i id="arrow-goDown"></i></a>
     </header>
-    <nav>
-        <a id="nav-logo" href="https://aoisejima.github.io/aoisejima.github.io/">
-            <!-- <img src="assets/img/logoaoi.png" alt="logo image"/> -->
-            <img src="assets/img/Vector.png" alt="Image: Logo"/>
-        </a>       
-        <ul id="nav-ul">
+    <nav>     
+        <!-- <ul id="nav-ul">
             <li>
-                <a href="work.html">
+                <a href="work.html" target="_blank">
                     <h2>MORE WORK</h2>
                 </a>
             </li>
-            <!-- <li>
-                <button type="button" onclick="buttonWorkTOC()">
-                    <h2>other works |</h2>
-                </button>
-            </li> -->
-            <!-- <li>
-                <button type="button" onclick="buttonActivateTabWebsite()">
-                    <a id="nav-work" href="#tab-website"><h2>#website /</h2></a>
-                </button>
-            </li>
-            <li>
-                <button type="button" onclick="buttonTabEditorial()">
-                    <a id="nav-work" href="#tab-editorial"><h2>#editorial /</h2></a>
-                </button>
-            </li>
-            <li>
-                <button type="button" onclick="buttonTabIllustration()">
-                    <a id="nav-work" href="#tab-illustration"><h2>#illustration /</h2></a>
-                </button>
-            </li> -->
             <li class="nav-li">
                 <button type="button" onclick="buttonAbout()">
                     <h2>ABOUT</h2>
@@ -70,43 +42,64 @@
                     <h2>CONTACT</h2>
                 </button>
             </li>
-        </ul>
-        <ul>
-            <li>
-                <a id="backToTop" href="#"><i id="arrow-goUp"></i></a>
-            </li>
-        </ul>
+        </ul> -->
+    </nav>
+    <nav class="nav">
+        <a id="nav-logo" href="https://aoisejima.github.io/aoisejima.github.io/">
+            <img src="assets/img/logoaoi.png" alt="logo image"/>
+            <!-- <img src="assets/img/Vector.png" alt="Image: Logo"/> -->
+        </a>   
+        <div class="navContainer">
+            <ul>
+                <li class="featuredWork-gallery active">
+                    <a class="show" href="#featuredWork-gallery"><h2>Featured</h2></a>
+                </li>
+                <li>
+                    <a class="show" href="work.html" target="_blank"><h2>More Work</h2></a>
+                </li>
+                <li class="about">
+                    <a class="show" href="#about"><h2>About</h2></a>
+                </li>
+                <li class="contact">
+                    <a class="show" href="#contact"><h2>Contact</h2></a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <aside>
-        <div id="toggle-about">
-            <div id="container-about">
-                <div class="content-about">
-                    <img id="about-img" src="assets/img/aboutimg.jpg" alt="Image: Me"/>
-                </div>
-                <div class="content-about">
-                    <h3 >Aoi is...</h3>
-                    <p>
-                        A 3rd year student in BFA Communication Design Major at Parsons School of Design, The New School.<br><br>
-                        Based in New York City<br><br>
-                        An aspiring Graphic Designer :)
-                    </p>
-                    <h3>Skills</h3>
-                    <ul class="icon">
-                        <li><img src="assets/img/icon/illustrator-icon.png" alt="Adobe Illustrator (icon)"/></li>
-                        <li><img src="assets/img/icon/photoshop-icon.png" alt="Adobe Photoshop (icon)"/></li>
-                        <li><img src="assets/img/icon/indesign-icon.png" alt="Adobe InDesign (icon)"/></li>
-                        <li><img src="assets/img/icon/premiere-pro-icon.png" alt="Adobe PremierePro (icon)"/></li>
-                        <li><img src="assets/img/icon/html-5-icon.png" alt="HTML (icon)"/></li>
-                        <li><img src="assets/img/icon/css-3-icon.png" alt="CSS (icon)"/></li>
-                        <li><img src="assets/img/icon/figma.png" alt="figma (icon)"/></li>
-                        <li><img src="assets/img/icon/procreate.png" alt="Procreate (icon)"/></li>
-                    </ul>
-                    <h3>Resume</h3>
-                    <p><a>download pdf</a></p>
-                </div>
+        <div id="about" class="content">
+            <div id="about-1">
+                <img src="assets/img/aboutimg.jpg" alt="Image: Me"/>
+            </div>
+            <div id="about-2">
+                <h3 >Aoi is...</h3>
+                <p>
+                    A 3rd year student in BFA Communication Design Major at Parsons School of Design, The New School.<br><br>
+                    Based in New York City<br><br>
+                    An aspiring Graphic Designer :)<br><br>
+                    My favorite moment in life is when I find light forming abstracted shadow on an object.<br><br>
+                    My hobby is to take pictures of what I find appealing in daily life!
+                </p>
+            </div>
+            <div id="about-3">
+                <h3>Skills</h3>
+                <ul class="icon">
+                    <li><img src="assets/img/icon/illustrator-icon.png" alt="Adobe Illustrator (icon)"/></li>
+                    <li><img src="assets/img/icon/photoshop-icon.png" alt="Adobe Photoshop (icon)"/></li>
+                    <li><img src="assets/img/icon/indesign-icon.png" alt="Adobe InDesign (icon)"/></li>
+                    <li><img src="assets/img/icon/premiere-pro-icon.png" alt="Adobe PremierePro (icon)"/></li>
+                    <li><img src="assets/img/icon/html-5-icon.png" alt="HTML (icon)"/></li>
+                    <li><img src="assets/img/icon/css-3-icon.png" alt="CSS (icon)"/></li>
+                    <li><img src="assets/img/icon/figma.png" alt="figma (icon)"/></li>
+                    <li><img src="assets/img/icon/procreate.png" alt="Procreate (icon)"/></li>
+                </ul>
+            </div>
+            <div id="about-4">
+                <h3>Resume</h3>
+                <p><a>download pdf</a></p>
             </div>
         </div>
-        <div id="toggle-contact">
+        <!-- <div id="contact" class="content">
             <h3>Thank you for your interest!</h3>
             <a href="mailto: sejia949@newschool.edu">
                 <p>
@@ -123,42 +116,47 @@
                 </li>
                 <li><img src="assets/img/icon/photoshop-icon.png" alt="Img: Instagram"/></li>
             </ul>
-        </div>
+        </div> -->
     </aside>
     <main>
-        <section id="featured-work-gallery">
-            <!-- Featured Work One -->
-            <div class="container-featuredWork" id="one">
-                <img src="assets/img/websiteDesign/AAPI/AAPI-1-LandingPage.png" alt="logo"/>
+        <section id="featuredWork-gallery">
+            <div>
+                <img class="work-one" src="assets/img/websiteDesign/AAPI/AAPI-1-LandingPage.png" alt="logo"/>
+                <div class="descriptionContainer">
+                    <h4>STOP AAPI HATE Application</h4>
+                    <p>
+                        Crimes targetting Asian women and elderies have been increasing. 
+                        Made an application version of <span class="italicise">STOP AAPI HATE</span>'s website 
+                        that lets users report incidents and check potential dangerous loactions on map.
+                    </p>
+                </div>
             </div>
-            <p class="container-featuredWork" id="two">
-                <span class="title">STOP AAPI HATE Application</span><br><br>
-                Crimes targetting Asian women and elderies have been increasing. 
-                Made an application version of <span class="italicise">STOP AAPI HATE</span>'s website 
-                that lets users report incidents and check potential dangerous loactions on map.
-            </p>
-            <!-- Featured Work Two -->
-            <p class="container-featuredWork" id="three">
-                <span class="title">In Praise of Shadow</span><br><br>
-                <span class="italicise">In Praise of Shadow</span> by Jun'ichiro Tanizaki, 
-                inspired me to create an interactive website that displays the importance of 
-                light and shadow relationship utilized in Japanese architecture.
-            </p>
-            <div class="container-featuredWork" id="four">
-                <img src="assets/img/websiteDesign/inPraiseOfShadow/praisePCMockup1.jpg" alt="logo"/>
+            <div>
+                <img class="work-two" src="assets/img/websiteDesign/inPraiseOfShadow/praisePCMockup1.jpg" alt="logo"/>
+                <div class="descriptionContainer">
+                    <h4>In Praise of Shadow</h4>
+                    <p>
+                        <span class="italicise">In Praise of Shadow</span> by Jun'ichiro Tanizaki, 
+                        inspired me to create an interactive website that displays the importance of 
+                        light and shadow relationship utilized in Japanese architecture.
+                    </p>
+                </div>
             </div>
-            <!-- Featured Work Three -->
-            <div class="container-featuredWork" id="five">
-                <img src="assets/img/typographyDesign/interviewYu/trustInterview-cover.jpg" alt="logo"/>
+            <div>
+                <img class="work-three" src="assets/img/typographyDesign/interviewYu/trustInterview-cover.jpg" alt="logo"/>
+                <div class="descriptionContainer">
+                    <h4>TRUST</h4>
+                    <p>
+                        <span class="italicise">In Praise of Shadow</span> by Jun'ichiro Tanizaki, 
+                        inspired me to create an interactive website that displays the importance of 
+                        light and shadow relationship utilized in Japanese architecture.
+                    </p>
+                </div>
             </div>
-            <p class="container-featuredWork" id="six">A 3rd year student in BFA Communication Design Major at Parsons School of Design, The New School.<br><br>
-                An aspiring UX/UI Designer seeking opportunity to develop projects to help people out in society.
-            </p>
-        </section>
-        <section>
-            <a id="morework-bottom" href="work.html" target="_blank">
-                <h2>MORE WORK</h2>
-            </a>
         </section>
     </main>
+    <div id="moreWork-bottom">
+        <a href="work.html" target="_blank"><h4>EXPLORE MORE</h4></a>
+        <a href="#"><i class="arrow" id="arrow-goUp"></i></a>
+    </div>
 </body>

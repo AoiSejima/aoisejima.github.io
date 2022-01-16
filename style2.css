@@ -35,11 +35,12 @@
     src: local('ITC Avant Garde Gothic Std Bold'), url('ITCAvantGardeStdBold.woff') format('woff');
 }
 
-body {
+
+html, body {
+    scroll-behavior: smooth;
     background: rgb(255, 255, 255);
-    /* background: linear-gradient(0deg, rgba(255,255,255,1) 75%, rgb(207, 221, 255) 100%); */
     margin: 0;
-    font-family: 'ITC Avant Garde Gothic Std Extra Light', 'ITC Avant Garde Gothic Std Medium', 'ITC Avant Garde Gothic Std Demi', 'ITC Avant Garde Gothic Std Bold', Verdana, sans-serif
+    font-family: 'ITC Avant Garde Gothic Std Extra Light', 'ITC Avant Garde Gothic Std Medium', 'ITC Avant Garde Gothic Std Demi', 'ITC Avant Garde Gothic Std Bold', Verdana, sans-serif;
 }
 
 ul {
@@ -52,45 +53,54 @@ a {
     text-decoration: none;
 }
 
-button {
-    background: transparent;
-    border: none;
-    text-align: center;
-    height: 3vh;
-    line-height: 0pt;
-}
-
 nav {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 70%;
+    margin-top: -10rem;
     width: 100%;
+    /* max-width: 1000px; */
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center;  */
+
     box-sizing: border-box;
     padding: 2rem;
-    z-index: 10;
+    z-index: 10;    
+    /* background-color: #eef0f1; */
 }
 #nav-logo img {
-    width: 10%;
+    width: 30%;
+    transition: all 3s ease-in-out;
 }
-nav ul {
-    text-align: right;
+#nav-logo img:hover {
+    transform: rotate(365deg);
+    -webkit-transform: rotate(365deg);
 }
-nav li {
-    margin-bottom: 2rem;
-}
+nav ul {text-align: right;}
+nav li {margin-bottom: 2rem;}
 h2 {
     font-size: 13pt;
     font-family: 'ITC Avant Garde Gothic Std Extra Light';
-}
-h4 {
-    font-size: 10pt;
-    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    color: rgb(143, 143, 143);
 }
 h2:hover {
     font-family: 'ITC Avant Garde Gothic Std Medium';
     letter-spacing: 4pt;
-    transition: 0.5s ease-in-out;
 }
+nav .navContainer ul li.active h2 {
+    font-family: 'ITC Avant Garde Gothic Std Medium';
+    letter-spacing: 4pt;
+    color: black;
+}
+li.active a h2 {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+}
+
 
 #toggle-about, #toggle-contact {
     position: fixed;
@@ -135,46 +145,74 @@ h3 {
 }
 
 main {
-    padding-top: 10rem;
-    margin: 0rem 20rem 10rem 20rem;
+    margin: 10rem 20rem 10rem 20rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(5rem, 100%);
+    /* grid-auto-rows: minmax(5rem, 100%); */
     grid-gap: 10rem;
     justify-items: stretch;
     box-sizing: border-box;
 }
 section {
-    margin: auto;
-    padding: 0;
-    margin: 0rem;
+    padding-top: 5rem;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(5rem, 15rem);
+    grid-auto-rows: minmax(5rem, 25rem);
     grid-gap: 3rem;
     justify-items: stretch;
     box-sizing: border-box;
     /* align-items: inherit; */
     /* align-items: stretch; */
-    /* background: rgb(152, 152, 152); */
+    /* border: 1px solid black; */
 }
 section img {
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
 }
 section img:hover {
-    transition: 0.5s;
-    opacity: 0.8;
+    opacity: 0.7;
     /* margin-top: -3rem; */
     /* object-fit: cover; */
 }
 .img-shrink img {
     object-fit: scale-down;
 }
-.img-cover img {
-    object-fit: cover;
+
+.descriptionContainer {
+    position: relative;
+    /* border: 1px solid black; */
 }
+.descriptionShow {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    transition: height 0.5s ease-in-out;
+}
+.descriptionContainer:hover > .descriptionShow {
+    height: 30%;
+}
+
+h4 {
+    font-size: 16pt;
+    font-family: 'ITC Avant Garde Gothic Std Extra Light Oblique';
+    width: 80%;
+    margin: 2rem 2rem 1rem 2rem;
+}
+p {
+    font-size: 13pt;
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    width: 80%;
+    margin: 0rem 2rem 3rem 2rem;
+}
+
 
 .work-1 {grid-column: 1/2; grid-row: 1/3;}
 .work-2 {grid-column: 2/3; grid-row: 1/3;}
