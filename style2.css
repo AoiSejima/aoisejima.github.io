@@ -34,12 +34,13 @@
     font-weight: normal;
     src: local('ITC Avant Garde Gothic Std Bold'), url('ITCAvantGardeStdBold.woff') format('woff');
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
 html, body {
     scroll-behavior: smooth;
     background: rgb(255, 255, 255);
     margin: 0;
-    font-family: 'ITC Avant Garde Gothic Std Extra Light', 'ITC Avant Garde Gothic Std Medium', 'ITC Avant Garde Gothic Std Demi', 'ITC Avant Garde Gothic Std Bold', Verdana, sans-serif;
+    font-family: "Lato", 'ITC Avant Garde Gothic Std Extra Light', 'ITC Avant Garde Gothic Std Medium', 'ITC Avant Garde Gothic Std Demi', 'ITC Avant Garde Gothic Std Bold', Verdana, sans-serif;
 }
 
 ul {
@@ -61,7 +62,7 @@ a {
     transition: all 3s ease-in-out;
     z-index: 10;
 }
-#nav-logo img:hover {
+#logo img:hover {
     transform: rotate(365deg);
     -webkit-transform: rotate(365deg);
 }
@@ -112,7 +113,7 @@ main {
     box-sizing: border-box;
     /* background: red; */
 }
-section {
+.workSection {
     padding-top: 5rem;
     margin: 0;
     display: grid;
@@ -125,14 +126,14 @@ section {
     /* align-items: stretch; */
     /* border: 1px solid black; */
 }
-section img {
+.workSection img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 0.5s ease-in-out;
 }
-section img:hover {
+.workSection img:hover {
     opacity: 0.7;
     /* margin-top: -3rem; */
     /* object-fit: cover; */
@@ -196,7 +197,94 @@ h4 {
 .work-17 {grid-column: 2/3; grid-row: 11/13;}
 
 
+.specificWorkSection {
+    padding-top: 5rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    justify-items: stretch;
+    box-sizing: border-box;
+    /* background: pink; */
+}
+
+.header-img img {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    object-fit:contain;
+}
+
+.description-info {
+    padding-top: 3rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    /* grid-auto-rows: minmax(5rem, 5rem); */
+    grid-gap: 5rem;
+    justify-items: stretch;
+    box-sizing: border-box;
+}
+.title {
+    font-size: 25pt;
+    font-family: 'ITC Avant Garde Gothic Std Medium Oblique';
+    color:rgb(97, 97, 97)
+}
+.subtitle {
+    font-size: 16pt;
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+}
+.visitLink {
+    font-size: 13pt;
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    text-decoration: underline;
+}
+.title-info {grid-column: 1/2; grid-row: 1/3;}
+.intro-info {grid-column: 2/3; grid-row: 1/3;}
+.more-info {grid-column: 3/4; grid-row: 1/3;}
+
+
+.closeUpImg-gallery {
+    padding-top: 3rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-auto-rows: minmax(5rem, 10rem); */
+    grid-gap: 3rem;
+    justify-items: stretch;
+    box-sizing: border-box;
+}
+.closeUpImg-gallery img {
+    display: block;
+    width: 100%;
+    height: 60vh;
+    object-fit: contain;
+}
+
+.processImg-gallery {
+    padding-top: 3rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    justify-items: stretch;
+    box-sizing: border-box;
+}
+.processImg-gallery img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.line {
+    margin-top: 10rem;
+    border-top: 2px dotted rgb(191, 191, 191);
+}
+
+
 #about {
+    padding-top: 5rem;  
     position: relative;
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -217,9 +305,7 @@ h4 {
     height: 100%;
     object-fit: cover;
 }
-#about img:hover {
-    opacity: 1;
-}
+#about img:hover {opacity: 1;}
 h3 {
     font-size: 16pt;
     letter-spacing: 4pt;
@@ -229,6 +315,8 @@ h3 {
 }
 main p {
     font-size: 16pt;
+    font-family: "Lato";
+    font-weight: 300;
 }
 .icon {
     display: grid;
@@ -246,7 +334,7 @@ main p {
 }
 
 #contact {
-    margin-top: 10rem;  
+    margin-top: 5rem;  
     margin-bottom: 20rem;
     /* background: yellow; */
     padding: 3rem;
@@ -263,6 +351,24 @@ main p {
     opacity: 1;
 }
 
+
+#arrow-goUp {
+    border: solid rgb(143, 143, 143);
+    padding: 1rem;
+    transform: rotate(45deg);
+    float: right;
+    position: fixed;
+    bottom: 50%;
+    right: 3rem;
+    transition: all 1s ease-in-out;  
+    cursor: pointer;  
+
+}
+#arrow-goUp:hover {
+    border: solid rgb(143, 143, 143);
+    border-width: 2px 0 0 2px;
+    transform: rotate(-315deg);
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
