@@ -55,32 +55,26 @@ a {
     color: rgb(23, 23, 23);
     text-decoration: none;
 }
-/* button {
-    background: transparent;
-    border: none;
-    text-align: center;
-    height: 3vh;
-    line-height: 0pt;
-} */
 
 header {
     width: 100%;
-    height: 50vh;
+    height: 100%;
+    padding-bottom: 5rem;
 }
 #gif {
     position: relative;
     width: 100%;
     object-fit: cover;
 }
-.line {
+/* .line {
     border-width: 0px 0px 3px;
     border: solid white;
     padding: 40rem;
     display: inline-block;
     position: absolute;
     left: 14%;
-}
-#line1 {
+} */
+/* #line1 {
     transform: rotate(50deg);
     top: -9rem;
 }
@@ -95,7 +89,7 @@ header {
 #line4 {
     transform: rotate(-70deg);
     top: -20rem;
-}
+} */
 .header-text {
     position: absolute;
     font-family: 'ITC Avant Garde Gothic Std Extra Light';
@@ -106,7 +100,7 @@ header {
 }
 #header-h1 {
     color: white;
-    /* text-shadow: 0px -12px 8px rgba(0, 0, 0, 0.05); */
+    text-shadow: 0px 4px 8px rgb(143, 143, 143, 0.8);
     font-size: 130pt;
     font-weight: lighter;
     top: 18rem;
@@ -120,9 +114,9 @@ header {
 .arrow {
     cursor: pointer;
 }
-#arrow-goDown {
-    border: solid rgb(85, 85, 85);
-    background: rgb(85, 85, 85);
+/* #arrow-goDown {
+    border: solid rgb(143, 143, 143);
+    background: rgb(143, 143, 143);
     padding: 0.5rem;
     border-radius: 50%;
     transform: rotate(45deg);
@@ -133,7 +127,7 @@ header {
     transition: all 0.7s ease-in-out;
 }
 #arrow-goDown:hover {
-    border: solid rgb(85, 85, 85);
+    border: solid rgb(143, 143, 143);
     background: none;
     padding: 1rem;
     left: 49%;
@@ -142,181 +136,115 @@ header {
     border-width: 0 3px 3px 0;
     transform: rotate(405deg);
     -webkit-transform: rotate(405deg);
-}
-#arrow-goUp {
-    border: solid rgb(85, 85, 85);
+} */
+#arrow-goDown {
+    border: solid rgb(143, 143, 143);
     padding: 1rem;
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    position: absolute;
-    right: 3rem;
-    top: -1rem;
-    transition: all 1s ease-in-out;
-}
-#arrow-goUp:hover {
-    border: solid rgb(85, 85, 85);;
-    border-width: 3px 0 0 3px;
-    transform: rotate(-315deg);
-    -webkit-transform: rotate(-315deg);
-}
-
-nav {
+    float: right;
     position: fixed;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 70%;
-    margin-top: -31.5rem;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2rem;
+    top: 50%;
+    right: 3rem;
+    transition: all 1s ease-in-out;
     z-index: 10;
 }
-#nav-logo img {
-    width: 30%;
+#arrow-goDown:hover {
+    border: solid rgb(143, 143, 143);
+    border-width: 0 2px 2px 0;
+    transform: rotate(405deg);
+}
+#arrow-goUp {
+    border: solid rgb(143, 143, 143);
+    padding: 1rem;
+    transform: rotate(45deg);
+    float: right;
+    position: fixed;
+    bottom: 50%;
+    right: 3rem;
+    transition: all 1s ease-in-out;    
+}
+#arrow-goUp:hover {
+    border: solid rgb(143, 143, 143);
+    border-width: 2px 0 0 2px;
+    transform: rotate(-315deg);
+}
+
+#logo img {
+    float: left;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    width: 5%;
     transition: all 3s ease-in-out;
+    z-index: 10;
 }
 #nav-logo img:hover {
     transform: rotate(365deg);
     -webkit-transform: rotate(365deg);
 }
-
+nav {
+    float: right;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+}
 nav ul {text-align: right;}
 nav li {margin-bottom: 2rem;}
-h2 {
-    font-size: 13pt;
-    font-family: 'ITC Avant Garde Gothic Std Extra Light';
-    transition: all 0.5s ease-in-out;
-    text-transform: uppercase;
-    color: rgb(143, 143, 143);
+#aboutContact {
+    float: right;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 10;
 }
-h2:hover {
-    font-family: 'ITC Avant Garde Gothic Std Medium';
-    letter-spacing: 4pt;
-}
-nav .navContainer ul li.active h2 {
-    font-family: 'ITC Avant Garde Gothic Std Medium';
-    letter-spacing: 4pt;
-    color: black;
-}
-li.active a h2 {
-    font-family: 'ITC Avant Garde Gothic Std Extra Light';
-}
-
 
 a.show {
+    font-size: 13pt;
+    text-transform: uppercase;
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    transition: all 0.5s ease-in-out;
     color: black;
-    text-decoration: none;
-    cursor: pointer;
+}
+a.show:hover {
+    letter-spacing: 4pt;
 }
 a.show:focus,
 a.show.active {
-    font-weight: bold;
-    font-size: large;
-}
-
-
-#about, #contact {
-    /* position: fixed;
-    width: 70%;
-    height: 60vh;
-    padding: 4%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 1rem 0 rgba(148, 148, 148, 0.3); 
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(3rem);
-    border-radius: 1rem;
-    z-index: 10; */
-    /* display: none; */
-}
-#about {
-    padding-top: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(5rem, 10rem);
-    grid-gap: 3rem;
-    justify-items: stretch;
-    box-sizing: border-box;
-    position: absolute;
-    width: 70%;
-    padding: 2%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 1rem 0 rgba(148, 148, 148, 0.3); 
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(3rem);
-    border-radius: 1rem;
-    z-index: 10;
-}
-#about-1 {grid-column: 1/2; grid-row: 1/5;}
-#about-2 {grid-column: 2/3; grid-row: 1/3;}
-#aabout-3 {grid-column: 2/3; grid-row: 3/4;}
-#aabout-3 {grid-column: 2/3; grid-row: 4/5;}
-#about-1 img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-h3 {
-    font-size: 20pt;
     font-family: 'ITC Avant Garde Gothic Std Medium';
-    margin-bottom: 1rem;
-}
-aside p {
-    font-size: 16pt;
-    font-family: 'ITC Avant Garde Gothic Std Extra Light';
-}
-.icon li {
-    display: inline;
-    text-align: justify;
-    margin-right: 1rem;
-}
-.icon img {width: 8%;}
-
-#contact h3 {
-    margin-bottom: 3rem;
+    letter-spacing: 4pt;
 }
 
-
-main {
-    position: relative;
-    margin: 33rem 10rem 20rem 10rem;
-    box-sizing: border-box;
-}
 section {
-    padding-top: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(5rem, 30rem);
-    grid-gap: 10rem;
-    justify-items: stretch;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
-}
-section img {
-    display: block;
-    width: 100%;
+    position: relative;
+    width: 70%;
     height: 100%;
-    transition: all 0.5s ease-in-out;
-    object-fit: scale-down;
+    box-sizing: border-box;
+    margin: auto;
+    /* padding: 5rem;
+    box-shadow: 0 0 1rem 0 rgba(148, 148, 148, 0.3); 
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3rem);
+    border-radius: 1rem; */
 }
-section img:hover {
+.bottomSpace {
+    margin-bottom: 10rem;
+}
+#featuredWork-gallery img {
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+}
+#featuredWork-gallery img:hover {
     opacity: 0.7;
 }
-
-.work-1 {grid-column: 1/2; grid-row: 1/3;}
-.work-2 {grid-column: 2/3; grid-row: 1/3;}
-.work-3 {grid-column: 3/4; grid-row: 1/3;}
-
-
 .descriptionContainer {
     font-size: 16pt;
-    width: 100%;
     line-height: 23pt;
-    margin: 3rem auto auto 3rem;
+    width: 70%;
+    margin: 5% auto;
 }
 h4 {
     font-family: 'ITC Avant Garde Gothic Std Extra Light Oblique';
@@ -329,13 +257,62 @@ p {
 }
 
 
+#about {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    /* grid-auto-rows: minmax(5rem, 10rem); */
+    grid-gap: 3rem;
+    justify-items: stretch;
+    box-sizing: border-box;
+    position: relative;
+}
+#about-1 {grid-column: 1/2; grid-row: 1/5;}
+#about-2 {grid-column: 2/3; grid-row: 1/3;}
+#aabout-3 {grid-column: 2/3; grid-row: 3/4;}
+#aabout-3 {grid-column: 2/3; grid-row: 4/5;}
+#about-1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h3 {
+    font-size: 16pt;
+    letter-spacing: 4pt;
+    text-transform: uppercase;
+    font-family: 'ITC Avant Garde Gothic Std Medium';
+    margin-bottom: 1rem;
+}
+main p {
+    font-size: 16pt;
+}
+.icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(5rem, 1rem);
+    grid-gap: 1rem;
+    width: 80%;
+    justify-items: stretch;
+    box-sizing: border-box;
+}
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#contact h3 {
+    margin-bottom: 3rem;
+}
+
 #moreWork-bottom {
+    float: center;
     position: relative;
     text-align: center;
-    margin-top: 24rem;
-    margin-bottom: 6rem;
-    padding-left: 43%;
-    padding-right: 43%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-left: 44%;
+    padding-right: 44%;
 }
 h4 {
     font-size: 13pt;
