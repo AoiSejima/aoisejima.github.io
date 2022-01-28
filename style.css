@@ -1,38 +1,26 @@
 @font-face {
     font-family: 'ITC Avant Garde Gothic Std Extra Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('ITC Avant Garde Gothic Std Extra Light'), url('ITCAvantGardeStdXLt.woff') format('woff');
+    src: local('ITC Avant Garde Gothic Std Extra Light'), url('assets/fonts/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdXLt.woff') format('woff');
 }
 @font-face {
     font-family: 'ITC Avant Garde Gothic Std Extra Light Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('ITC Avant Garde Gothic Std Extra Light Oblique'), url('ITCAvantGardeStdXLtObl.woff') format('woff');
+    src: local('ITC Avant Garde Gothic Std Extra Light Oblique'), url('assets/fonts/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdXLtObl.woff') format('woff');
 }
 @font-face {
     font-family: 'ITC Avant Garde Gothic Std Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('ITC Avant Garde Gothic Std Medium'), url('ITCAvantGardeStdMd.woff') format('woff');
+    src: local('ITC Avant Garde Gothic Std Medium'), url('assets/fonts/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdMd.woff') format('woff');
 }
 @font-face {
     font-family: 'ITC Avant Garde Gothic Std Medium Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('ITC Avant Garde Gothic Std Medium Oblique'), url('ITCAvantGardeStdMdObl.woff') format('woff');
+    src: local('ITC Avant Garde Gothic Std Medium Oblique'), url('assets/fonts/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdMdObl.woff') format('woff');
 }
 @font-face {
     font-family: 'ITC Avant Garde Gothic Std Demi';
-    font-style: normal;
-    font-weight: normal;
-    src: local('ITC Avant Garde Gothic Std Demi'), url('ITCAvantGardeStdDemi.woff') format('woff');
+    src: local('ITC Avant Garde Gothic Std Demi'), url('assets/fonts/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdDemi.woff') format('woff');
 }
 @font-face {
     font-family: 'ITC Avant Garde Gothic Std Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('ITC Avant Garde Gothic Std Bold'), url('ITCAvantGardeStdBold.woff') format('woff');
+    src: local('ITC Avant Garde Gothic Std Bold'), url('assets/fonts/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdBold.woff') format('woff');
 }
 
 html, body {
@@ -103,12 +91,13 @@ header {
     text-shadow: 0px 4px 8px rgb(143, 143, 143, 0.8);
     font-size: 130pt;
     font-weight: lighter;
-    top: 18rem;
+    top: 25%;
 }
 #header-p {
     color: black;
     font-size: 16pt;
-    top: 36rem;
+    top: 55%;
+    width: 60%;
 }
 
 .arrow {
@@ -209,8 +198,7 @@ a.show {
 a.show:hover {
     letter-spacing: 4pt;
 }
-a.show:focus,
-a.show.active {
+a.show:focus, a.show.active {
     font-family: 'ITC Avant Garde Gothic Std Medium';
     letter-spacing: 4pt;
 }
@@ -232,14 +220,14 @@ section {
 }
 #featuredWork-gallery img {
     display: block;
-    width: 50%;
+    width: 70%;
     height: 100%;
     margin: auto;
     transition: all 0.5s ease-in-out;
 }
-#featuredWork-gallery img:hover {
+/* #featuredWork-gallery img:hover {
     opacity: 0.7;
-}
+} */
 .descriptionContainer {
     font-size: 16pt;
     line-height: 23pt;
@@ -317,7 +305,7 @@ main p {
 h4 {
     font-size: 13pt;
     text-transform: uppercase;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: black;
     font-family: 'ITC Avant Garde Gothic Std Extra Light';
     transition: all 0.5s ease-in-out;
@@ -328,17 +316,219 @@ h4:hover {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-.gallery-column {
-    flex: 50%;
-    max-width: 50%;
-}
+@media screen and (max-width: 900px) {
+   
+    #logo img {
+        width: 8%;
+    }
+
+    #header-h1 {
+        font-size: 80pt;
+        top: 14%;
+    }
+    #header-p {
+        font-size: 14pt;
+        top: 35%;
+        width: 50%;
+        line-height: 18pt;
+    }
+
+    #arrow-goDown {
+        padding: 0.8rem;
+        right: 2rem;
+    }
+    #arrow-goDown:hover {
+        border-width: 0 2px 2px 0;
+    }
+    #arrow-goUp {
+        padding: 0.8rem;
+        /* border-width: 2px 0 0 2px; */ 
+        right: 2rem;
+    }
+    #arrow-goUp:hover {
+        border-width: 2px 0 0 2px;
+    }
+
+
+    nav li {margin-bottom: 1rem;}
+    a.show {
+        font-size: 13pt;
+    }
+    a.show:hover {
+        letter-spacing: 3pt;
+    }
+    a.show:focus, a.show.active {
+        letter-spacing: 3pt;
+    }
+
+    section {
+        width: 80%;
+    }
+    .bottomSpace {
+        margin-bottom: 4rem;
+    }
+    #featuredWork-gallery img {
+        width: 70%;
+    }
+    .descriptionContainer {
+        font-size: 10pt;
+        line-height: 20pt;
+        width: 70%;
+    }
+
+    .bottomSpace {
+        margin-bottom: 5rem;
+    }
+    .descriptionContainer {
+        font-size: 10pt;
+        line-height: 20pt;
+        width: 70%;
+    }
+
+    #moreWork-bottom {
+        padding-left: 34%;
+        padding-right: 34%;
+    }
+
+    /* .gallery-column {
+        flex: 50%;
+        max-width: 50%;
+    } */
+
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-.gallery-column {
+
+    #logo img {
+        width: 15%;
+        top: 3rem;
+        left: 1rem;
+    }
+    header {
+        width: 100%;
+        height: 50vh;
+        padding-bottom: 25rem;
+        margin: auto;
+    }
+    #gif {
+        width: 300%;
+        left: -100%;
+        object-fit: contain;
+    }
+
+    #header-h1 {
+        font-size: 55pt;
+        top: 25%;
+    }
+    #header-p {
+        font-size: 13pt;
+        top: 50%;    
+        width: 60%;
+        line-height: 17pt;
+    }
+    
+    #arrow-goDown {
+        padding: 0.7rem;
+        right: 2rem;
+    }
+    #arrow-goDown:hover {
+        border-width: 0 2px 2px 0;
+    }
+    #arrow-goUp {
+        padding: 0.7rem;
+        /* border-width: 2px 0 0 2px; */ 
+        right: 2rem;
+    }
+    #arrow-goUp:hover {
+        border-width: 2px 0 0 2px;
+    }
+    
+    nav {
+        /* float: right; */
+        top: 0%;
+        /* left: 35%; */
+        background: white;
+        width: 100%;
+        height: 5rem;
+    }
+    nav ul {
+        text-align: center;
+        display: inline-flex;
+    }
+    nav li {margin-right: 5rem;}
+    #aboutContact {
+        right: 1rem;
+        bottom: 1rem;
+    }
+    a.show {
+        font-size: 12pt;
+    }
+    a.show:hover {
+        letter-spacing: 3pt;
+    }
+    a.show:focus, a.show.active {
+        letter-spacing: 3pt;
+    }
+    
+
+    section {
+        width: 90%;
+    }
+    .bottomSpace {
+        margin-bottom: 4rem;
+    }
+    #featuredWork-gallery img {
+        width: 70%;
+    }
+    .descriptionContainer {
+        font-size: 10pt;
+        line-height: 20pt;
+        width: 70%;
+    }
+
+
+    #about {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-auto-rows: 5rem;
+        grid-gap: 2rem;
+    }
+    #about-1 {grid-column: 1/2; grid-row: 1/5;}
+    #about-2 {grid-column: 2/3; grid-row: 1/3;}
+    #aabout-3 {grid-column: 2/3; grid-row: 3/4;}
+    #aabout-3 {grid-column: 2/3; grid-row: 4/5;}
+    h3 {
+        font-size: 13pt;
+        letter-spacing: 2pt;
+        margin-bottom: 0.5rem;
+    }
+    main p {
+        font-size: 13pt;
+    }
+    .icon {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 3rem;
+        width: 80%;
+    }
+
+    #moreWork-bottom {
+        /* margin-top: 5rem;
+        margin-bottom: 5rem; */
+        padding-left: 34%;
+        padding-right: 34%;
+    }
+    h4 {
+        font-size: 12pt;
+    }
+
+
+/* .gallery-column {
     flex: 100%;
     max-width: 100%;
-}
+} */
+
+
+
+
 }
