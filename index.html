@@ -34,7 +34,7 @@
     </a>
     <nav class="nav navContainer">
         <ul>
-            <li class="featuredWork-gallery active">
+            <li class="featuredWork-gallery">
                 <a class="show" data-title="featuredWork-gallery" href="#featuredWork-gallery">Featured</a>
             </li>
             <li>
@@ -42,7 +42,7 @@
             </li>    
         </ul>
         <ul id="aboutContact">
-            <li class="about">
+            <li class="about active">
                 <a class="show" data-title="about" href="#about">About</a>
             </li>    
             <li class="contact">
@@ -51,50 +51,6 @@
         </ul>
     </nav>
     <main>
-        <section id="featuredWork-gallery" class="content">
-            <ul>
-                <li id="featuredWork-1" class="bottomSpace">
-                    <a id="aapi" href="aapi.html">
-                        <img src="assets/img/websiteDesign/AAPI/AAPI-1landingtPage_3_AdobeCreativeCloudExpress.gif" alt="logo"/>
-                    </a>
-                    <div class="descriptionContainer">
-                        <a href="aapi.html">
-                            <h4>STOP AAPI HATE Application</h4>
-                        </a>
-                        <p>
-                            Crimes targetting Asian women and elderies have been increasing. 
-                            Made an application version of <span class="italicise">STOP AAPI HATE</span>'s website 
-                            that lets users report incidents and check potential dangerous loactions on map.
-                        </p>
-                    </div>
-                </li>
-                <li id="featuredWork-2" class="bottomSpace">
-                    <a href="inpraiseofshadow.html">
-                        <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-4shoji.jpg" alt="logo"/>
-                    </a>
-                    <div class="descriptionContainer">
-                        <h4>In Praise of Shadow</h4>
-                        <p>
-                            <span class="italicise">In Praise of Shadow</span> by Jun'ichiro Tanizaki, 
-                            inspired me to create an interactive website that displays the importance of 
-                            light and shadow relationship utilized in Japanese architecture.
-                        </p>
-                    </div>
-                </li>
-                <li id="featuredWork-3">
-                    <a href="trust.html">
-                        <img src="assets/img/typographyDesign/interviewYu/trustInterview-cover.jpg" alt="logo"/>
-                    </a>
-                    <div class="descriptionContainer">
-                        <h4>TRUST</h4>
-                        <p>
-                            I conducted an interview with my roommate, where I displayed the friendship 
-                            and bonding we achieved despite some of the political situations our national countries go through. 
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </section>
         <section a id="about" class="content">
             <div id="about-1">
                 <img src="assets/img/aboutimg.jpg" alt="Image: Me"/>
@@ -124,10 +80,54 @@
             </div>
             <div id="about-4">
                 <h3>Resume</h3>
-                <p>
-                    <a href="../assets/img/aoiSejima_resume2022.pdf" target="_blank"><h4>Download PDF</h4></a>
-                </p>
+                <a href="../assets/img/aoiSejima_resume2022.pdf" target="_blank">
+                    <p id="downloadLink">Download PDF</p>
+                </a>
             </div>
+        </section>
+        <section id="featuredWork-gallery" class="content">
+            <ul>
+                <li id="featuredWork-3">
+                    <a href="trust.html">
+                        <img src="assets/img/typographyDesign/interviewYu/trustInterview-cover.jpg" alt="logo"/>
+                    </a>
+                    <div class="descriptionContainer">
+                        <h4>TRUST</h4>
+                        <p>
+                            I conducted an interview with my roommate, where I displayed the friendship 
+                            and bonding we achieved despite some of the political situations our national countries go through. 
+                        </p>
+                    </div>
+                </li>
+                <li id="featuredWork-2" class="bottomSpace">
+                    <a href="inpraiseofshadow.html">
+                        <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-4shoji.jpg" alt="logo"/>
+                    </a>
+                    <div class="descriptionContainer">
+                        <h4>In Praise of Shadow</h4>
+                        <p>
+                            <span class="italicise">In Praise of Shadow</span> by Jun'ichiro Tanizaki, 
+                            inspired me to create an interactive website that displays the importance of 
+                            light and shadow relationship utilized in Japanese architecture.
+                        </p>
+                    </div>
+                </li>
+                <li id="featuredWork-1" class="bottomSpace">
+                    <a id="aapi" href="aapi.html">
+                        <img src="assets/img/websiteDesign/AAPI/AAPI-1landingtPage_3_AdobeCreativeCloudExpress.gif" alt="logo"/>
+                    </a>
+                    <div class="descriptionContainer">
+                        <a href="aapi.html">
+                            <h4>STOP AAPI HATE Application</h4>
+                        </a>
+                        <p>
+                            Crimes targetting Asian women and elderies have been increasing. 
+                            Made an application version of <span class="italicise">STOP AAPI HATE</span>'s website 
+                            that lets users report incidents and check potential dangerous loactions on map.
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </section>
         <section a id="contact" class="content">
             <h3>Thank you for your interest!</h3>
@@ -144,8 +144,8 @@
             </div>
         </section>
     </main>
-    <div id="moreWork-bottom">
+    <!-- <div id="moreWork-bottom">
         <a id="exploreMore" href="work.html"><h4>EXPLORE MORE</h4></a>
-    </div>
+    </div> -->
     <a href="#"><i class="arrow" id="arrow-goUp"></i></a>
 </body>
