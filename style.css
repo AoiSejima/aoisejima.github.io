@@ -315,24 +315,10 @@ h4:hover {
     letter-spacing: 4pt;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+
+
 @media screen and (max-width: 900px) {
    
-    #logo img {
-        width: 8%;
-    }
-
-    #header-h1 {
-        font-size: 80pt;
-        top: 14%;
-    }
-    #header-p {
-        font-size: 14pt;
-        top: 35%;
-        width: 50%;
-        line-height: 18pt;
-    }
-
     #arrow-goDown {
         padding: 0.8rem;
         right: 2rem;
@@ -349,6 +335,20 @@ h4:hover {
         border-width: 2px 0 0 2px;
     }
 
+    #logo img {
+        width: 8%;
+    }
+
+    #header-h1 {
+        font-size: 80pt;
+        top: 14%;
+    }
+    #header-p {
+        font-size: 14pt;
+        top: 37%;
+        width: 50%;
+        line-height: 18pt;
+    }
 
     nav li {margin-bottom: 1rem;}
     a.show {
@@ -360,7 +360,7 @@ h4:hover {
     a.show:focus, a.show.active {
         letter-spacing: 3pt;
     }
-
+    
     section {
         width: 80%;
     }
@@ -389,48 +389,13 @@ h4:hover {
         padding-left: 34%;
         padding-right: 34%;
     }
-
-    /* .gallery-column {
-        flex: 50%;
-        max-width: 50%;
-    } */
-
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
-    #logo img {
-        width: 15%;
-        top: 3rem;
-        left: 1rem;
-    }
-    header {
-        width: 100%;
-        height: 50vh;
-        padding-bottom: 25rem;
-        margin: auto;
-    }
-    #gif {
-        width: 300%;
-        left: -100%;
-        object-fit: contain;
-    }
-
-    #header-h1 {
-        font-size: 55pt;
-        top: 25%;
-    }
-    #header-p {
-        font-size: 13pt;
-        top: 50%;    
-        width: 60%;
-        line-height: 17pt;
-    }
-    
     #arrow-goDown {
         padding: 0.7rem;
-        right: 2rem;
+        right: 1rem;
     }
     #arrow-goDown:hover {
         border-width: 0 2px 2px 0;
@@ -438,96 +403,105 @@ h4:hover {
     #arrow-goUp {
         padding: 0.7rem;
         /* border-width: 2px 0 0 2px; */ 
-        right: 2rem;
+        right: 1rem;
     }
     #arrow-goUp:hover {
         border-width: 2px 0 0 2px;
     }
-    
-    nav {
-        /* float: right; */
-        top: 0%;
-        /* left: 35%; */
-        background: white;
+
+    header {
         width: 100%;
-        height: 5rem;
+        height: 65vh;
+        padding-bottom: 5rem;
+        /* background: pink; */
+        margin-top: 25%;
+    }
+    #navBG {
+        background: yellow;
+        width: 100%;
+        height: 15vh;
+        position: fixed;
+        z-index: 10;
+        margin-top: -185%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.42);
+    }
+    #gif {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #header-h1 {
+        font-size: 50pt;
+        top: 28%;
+    }
+    #header-p {
+        font-size: 13pt;
+        top: 53%;    
+        width: 60%;
+        line-height: 17pt;
+    }
+
+    #logo img {
+        width: 14%;
+        top: 2rem;
+        left: 43%;
+    }
+    nav {
+        position: fixed;
+        margin-top: 0%;
+        padding: 1rem;
+        margin-right: 6rem;
+        width: 60%;
+        height: 5vh;
     }
     nav ul {
-        text-align: center;
-        display: inline-flex;
+        top: 3rem;
+        text-align: left;
     }
-    nav li {margin-right: 5rem;}
     #aboutContact {
-        right: 1rem;
-        bottom: 1rem;
+        text-align: right;
+        right: 1.5rem;
     }
     a.show {
         font-size: 12pt;
     }
     a.show:hover {
-        letter-spacing: 3pt;
+        letter-spacing: 0pt;
+        font-weight: bolder;
     }
     a.show:focus, a.show.active {
-        letter-spacing: 3pt;
+        letter-spacing: 0pt;
+        font-weight: bolder;
     }
-    
 
-    section {
-        width: 90%;
-    }
-    .bottomSpace {
-        margin-bottom: 4rem;
-    }
-    #featuredWork-gallery img {
-        width: 70%;
-    }
-    .descriptionContainer {
-        font-size: 10pt;
-        line-height: 20pt;
-        width: 70%;
-    }
 
 
     #about {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        grid-auto-rows: 5rem;
-        grid-gap: 2rem;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1rem;
     }
-    #about-1 {grid-column: 1/2; grid-row: 1/5;}
+    #about-1 {grid-column: 1/2; grid-row: 1/3;}
     #about-2 {grid-column: 2/3; grid-row: 1/3;}
     #aabout-3 {grid-column: 2/3; grid-row: 3/4;}
     #aabout-3 {grid-column: 2/3; grid-row: 4/5;}
     h3 {
         font-size: 13pt;
-        letter-spacing: 2pt;
-        margin-bottom: 0.5rem;
+        letter-spacing: 4pt;
+        margin-bottom: 1rem;
     }
     main p {
         font-size: 13pt;
     }
     .icon {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-auto-rows: 3rem;
-        width: 80%;
+        /* grid-auto-rows: minmax(5rem, 1rem); */
+        grid-gap: 0.5rem;
+        width: 100%;
     }
 
-    #moreWork-bottom {
-        /* margin-top: 5rem;
-        margin-bottom: 5rem; */
-        padding-left: 34%;
-        padding-right: 34%;
+    #contact h3 {
+        margin-bottom: 3rem;
     }
-    h4 {
-        font-size: 12pt;
-    }
-
-
-/* .gallery-column {
-    flex: 100%;
-    max-width: 100%;
-} */
-
 
 
 

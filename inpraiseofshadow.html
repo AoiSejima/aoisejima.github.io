@@ -7,7 +7,7 @@
     <meta name="description" content="Aoi Sejima Portfolio Website - Work Description">
     <meta name="author" content="Aoi Sejima">
     <link rel="shortcut icon" type="image/png" href="./assets/img/logoaoi.png" />
-    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./style3.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <link rel="stylesheet" href="https://use.typekit.net/sln2byj.css">
     <script type="text/javascript" src="./script.js" defer></script>
@@ -18,29 +18,48 @@
         <!-- <img src="assets/img/Vector.png" alt="Image: Logo"/> -->
     </a>
     <nav class="navContainer">
-        <a href="work.html"><h2>Back to Exploration</h2></a>
+        <ul>
+            <li>
+                <a href="work.html"><h4>Back to Exploration</h4></a>
+            </li>
+            <li class="description active">
+                <a href="#description"><h4>Description</h4></a>
+            </li>
+            <li class="process">
+                <a href="#process"><h4>Process</h4></a>
+            </li>
+            <li class="outcome">
+                <a href="#outcome"><h4>Outcome</h4></a>
+            </li>
+        </ul>
         <ul id="aboutContact">
             <li class="about">
-                <a data-title="about" href="#about"><h2>About</h2></a>
+                <a data-title="about" href="#about"><h4>About</h4></a>
             </li>    
             <li class="contact">
-                <a data-title="contact" href="#contact"><h2>Contact</h2></a>
+                <a data-title="contact" href="#contact"><h4>Contact</h4></a>
             </li>
         </ul>
     </nav>
     <main>
         <section class="specificWorkSection">
             <div class="header-img">
-                <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-1eaves.gif" alt="Adobe Illustrator (icon)"/>
+                <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-4shoji.jpg" alt="In Praise of Shadow "/>
             </div>
+        </section>
+        <section id="description" class="specificWorkSection">
             <div class="description-info">
                 <ul class="title-info">
                     <li>
-                        <h1 class="title" id="title-IPS">In Praise of Shadow</h1>
+                        <h1 id="title-IPS">In Praise of Shadow</h1>
                     </li>
                     <li>
-                        <p class="subtitle">February 2021</p>
-                    </li>
+                        <p class="uppercase">
+                            Designed
+                        </p>
+                        <div class="indented">
+                            <p>February 2021</p>
+                        </div>
                     <li>
                         <p class="medium">HTML, CSS, JavaScript</p>
                     </li>
@@ -50,8 +69,8 @@
                 </ul>
                 <ul class="intro-info">
                     <li>
-                        <h5 class="subtitle">OBJECTIVE</h5>
-                        <p>
+                        <h2>OBJECTIVE</h2>
+                        <p class="introDescription">
                             "Stories as Networks"<br><br>
                             Get inspired by a story to design an interactive website.
                         </p>
@@ -59,8 +78,8 @@
                 </ul>
                 <ul class="more-info">
                     <li>
-                        <h5 class="subtitle">INSPIRATION</h5>
-                        <p>
+                        <h2>INSPIRATION</h2>
+                        <p class="introDescription">
                             Getting inspired by <span class="italic">In Praise of Shadow</span> by Junichio Tanizaki, 
                             I designed and coded this in regard to presenting the importance 
                             of the light and shadow relationship utilized in Japanese architecture.<br><br>
@@ -69,61 +88,103 @@
                     </li>
                 </ul>
             </div>
-            <div class="closeUp-gallery">
-                <div class="closeUp-gallery-rightImg">
-                    <div class="closeUp-img1">
-                        <img class="closeUp-img" src="assets/img/websiteDesign/inPraiseOfShadow/IPS-1eaves.gif" alt="Adobe Illustrator (icon)"/>
+        </section>
+        <section id="process" class="specificWorkSection">
+            <div class="processImg-gallery">
+                <div>
+                    <h2>Draft 1</h2>
+                    <div class="description-img">
+                        <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-draft1.jpg" alt="In Praise of Shadow Sketch 1"/>
                     </div>
-                    <div class="closeUp-img2">
-                        <h6>EAEVES</h6>
+                </div>
+                <div>
+                    <h2>Draft 2</h2>
+                    <div class="description-img">
+                        <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-draft2.jpg" alt="In Praise of Shadow Sketch 2"/>
+                    </div>
+                </div>
+                <div>
+                    <h2>Draft 3</h2>
+                    <div class="description-img">
+                        <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-draft3.jpg" alt="In Praise of Shadow Sketch 3"/>
+                    </div>
+                </div>
+                <div>
+                    <h2>Draft 4</h2>
+                    <div class="description-img">
+                        <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-draft4.jpg" alt="In Praise of Shadow Sketch 4"/>            
+                    </div>
+                </div>    
+                <div>
+                    <h2>Mobile Ver. Draft 1</h2>
+                    <div class="description-img">
+                        <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-mobileDraft1.jpg" alt="In Praise of Shadow Sketch 4"/>            
+                    </div>
+                </div>     
+                <div>
+                    <h2>Mobile Ver. Draft 2</h2>
+                    <div class="description-img">
+                        <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-mobileDraft2.jpg" alt="In Praise of Shadow Sketch 4"/>            
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <section id="outcome" class="specificWorkSection">
+            <div class="closeUp-gallery">
+                <div class="closeUp-gallery-columns">
+                    <div>
+                        <img class="closeUp-img" src="assets/img/websiteDesign/inPraiseOfShadow/IPS-1eaves.jpg" alt="In Praise of Shadow "/>
+                    </div>
+                    <div class="closeUpDescription closeUpDescription-horizontal">
+                        <h3>EAEVES</h3>
                         <p>
                             Entrance of a house.<br>
                             The white font displays the brightness of a room under the roof.
                         </p>
                     </div>
                 </div>
-                <div class="closeUp-gallery-leftImg">
-                    <div class="closeUp-img1">
-                        <h6>VERANDA</h6>
+                <div class="closeUp-gallery-columns">
+                    <div class="closeUpDescription closeUpDescription-horizontal">
+                        <h3>VERANDA</h3>
                         <p>
                             Inside of the room looks darker when the outside is bright.
                             Leading gradually gets tighter as font-weight gets thicker. 
                         </p>
                     </div>
-                    <div class="closeUp-img2">
-                        <img class="closeUp-img" src="assets/img/websiteDesign/inPraiseOfShadow/IPS-2veranda.gif" alt="Adobe Illustrator (icon)"/>
+                    <div>
+                        <img class="closeUp-img" src="assets/img/websiteDesign/inPraiseOfShadow/IPS-2veranda.jpg" alt="In Praise of Shadow "/>
                     </div>
                 </div>
-                <div class="closeUp-gallery-rightImg">
-                    <div class="closeUp-img1">
-                        <img class="closeUp-img" src="assets/img/websiteDesign/inPraiseOfShadow/IPS-3alcove.gif" alt="Adobe Illustrator (icon)"/>
+                <div class="closeUp-gallery-columns">
+                    <div>
+                        <img class="closeUp-img" src="assets/img/websiteDesign/inPraiseOfShadow/IPS-3alcove2.jpg" alt="In Praise of Shadow "/>
                     </div>
-                    <div class="closeUp-img2">
-                        <h6>ALCOVE</h6>
+                    <div class="closeUpDescription closeUpDescription-horizontal">
+                        <h3>ALCOVE</h3>
                         <p>
                             Shadow of an object in a room darkens and disappears in the dark when no light comes in.
                             The bar shifts color of the background and font. 
                         </p>
                     </div>
                 </div>
-                <div class="closeUp-gallery-leftImg">
-                    <div class="closeUp-img1">
-                        <h6>SHOJI</h6>
+                <div class="closeUp-gallery-columns">
+                    <div class="closeUpDescription closeUpDescription-horizontal">
+                        <h3>SHOJI</h3>
                         <p>
                             Shoji paper absorbs and weakens sunlight coming in from outside.
                             Font color changes color as shoji moves around.
                         </p>
                     </div>
-                    <div class="closeUp-img2">
-                        <img class="closeUp-img" src="assets/img/websiteDesign/inPraiseOfShadow/IPS-4shoji.gif" alt="Adobe Illustrator (icon)"/>
+                    <div>
+                        <img class="closeUp-img" src="assets/img/websiteDesign/inPraiseOfShadow/IPS-4shoji.jpg" alt="In Praise of Shadow "/>
                     </div>
                 </div>
-                <div class="closeUp-gallery-rightImg">
-                    <div class="closeUp-img1">
-                        <img class="closeUp-img" src="assets/img/websiteDesign/inPraiseOfShadow/IPS-5gold.gif" alt="Adobe Illustrator (icon)"/>
+                <div class="closeUp-gallery-columns">
+                    <div>
+                        <img class="closeUp-img" src="assets/img/websiteDesign/inPraiseOfShadow/IPS-5gold.jpg" alt="In Praise of Shadow "/>
                     </div>
-                    <div class="closeUp-img2">
-                        <h6>GOLD</h6>
+                    <div class="closeUpDescription closeUpDescription-horizontal">
+                        <h3>GOLD</h3>
                         <p>
                             Distance shifts the brightness of gold.
                             Hovering on the textbox changes the scale of the text box. 
@@ -131,47 +192,46 @@
                     </div>
                 </div>
             </div>
-            <div class="processImg-gallery">
-                <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-sketch1.jpg" alt="Adobe Illustrator (icon)"/>
-                <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-sketch2.jpg" alt="Adobe Illustrator (icon)"/>
-                <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-sketch3.jpg" alt="Adobe Illustrator (icon)"/>
-                <img src="assets/img/websiteDesign/inPraiseOfShadow/IPS-sketch4.jpg" alt="Adobe Illustrator (icon)"/>            </div>
-            <div class="line"></div>
         </section>
-        <section a id="about" class="specificWorkSection">
-            <div id="about-1">
-                <img src="assets/img/aboutimg.jpg" alt="Image: Me"/>
+        <div class="line"></div>
+        <section id="about" class="workSection">
+            <div id="about-img">
+                <img src="assets/img/aboutimg.jpg" alt="An Image of Me!:)"/>
             </div>
-            <div id="about-2">
-                <h3 >Aoi is...</h3>
-                <p>
-                    A 3rd year student in BFA Communication Design Major at Parsons School of Design, The New School.<br><br>
-                    Based in New York City<br><br>
-                    An aspiring Graphic Designer :)<br><br>
-                    My favorite moment in life is when I find light forming abstracted shadow on an object.<br><br>
-                    My hobby is to take pictures of what I find appealing in daily life!
-                </p>
-            </div>
-            <div id="about-3">
-                <h3>Skills</h3>
-                <ul class="icon">
-                    <li><img src="assets/img/icon/illustrator-icon.png" alt="Adobe Illustrator (icon)"/></li>
-                    <li><img src="assets/img/icon/photoshop-icon.png" alt="Adobe Photoshop (icon)"/></li>
-                    <li><img src="assets/img/icon/indesign-icon.png" alt="Adobe InDesign (icon)"/></li>
-                    <li><img src="assets/img/icon/premiere-pro-icon.png" alt="Adobe PremierePro (icon)"/></li>
-                    <li><img src="assets/img/icon/html-5-icon.png" alt="HTML (icon)"/></li>
-                    <li><img src="assets/img/icon/css-3-icon.png" alt="CSS (icon)"/></li>
-                    <li><img src="assets/img/icon/figma.png" alt="figma (icon)"/></li>
-                    <li><img src="assets/img/icon/procreate.png" alt="Procreate (icon)"/></li>
-                </ul>
-            </div>
-            <div id="about-4">
-                <h3>Resume</h3>
-                <p><a>download pdf</a></p>
-            </div>
+            <ul id="about-description">
+                <li>
+                    <h6>Aoi is...</h6>
+                    <p>
+                        A 3rd year student in BFA Communication Design Major at Parsons School of Design, The New School.<br><br>
+                        Based in New York City<br><br>
+                        An aspiring Graphic Designer :)<br><br>
+                        My favorite moment in life is when I find light forming abstracted shadow on an object.<br><br>
+                        My hobby is to take pictures of what I find appealing in daily life!
+                    </p>
+                </li>
+                <li>
+                    <h6>Skills</h6>
+                    <ul class="icon">
+                        <li><img src="assets/img/icon/illustrator-icon.png" alt="Adobe Illustrator (icon)"/></li>
+                        <li><img src="assets/img/icon/photoshop-icon.png" alt="Adobe Photoshop (icon)"/></li>
+                        <li><img src="assets/img/icon/indesign-icon.png" alt="Adobe InDesign (icon)"/></li>
+                        <li><img src="assets/img/icon/premiere-pro-icon.png" alt="Adobe PremierePro (icon)"/></li>
+                        <li><img src="assets/img/icon/html-5-icon.png" alt="HTML (icon)"/></li>
+                        <li><img src="assets/img/icon/css-3-icon.png" alt="CSS (icon)"/></li>
+                        <li><img src="assets/img/icon/figma.png" alt="figma (icon)"/></li>
+                        <li><img src="assets/img/icon/procreate.png" alt="Procreate (icon)"/></li>
+                    </ul>
+                </li>
+                <li>
+                    <h6>Resume</h6>
+                    <a href="../assets/img/aoiSejima_resume2022.pdf" target="_blank">
+                        <p id="downloadLink">Download PDF</p>
+                    </a>
+                </li>
+            </ul>
         </section>
         <section a id="contact" class="specificWorkSection">
-            <h3>Thank you for your interest!</h3>
+            <h6>Thank you for your interest!</h6>
             <a href="mailto: sejia949@newschool.edu">
                 <p>
                     <i style="font-size:24px" class="fa">&#xf003;</i>
@@ -182,8 +242,8 @@
                 <li>
                     <a href="https://github.com/matthizzone" class="fab fa-linkedin">
                     </a>
-                    <h3>
-                    </h3>
+                    <h6>
+                    </h6>
                 </li>
                 <li><img src="assets/img/icon/photoshop-icon.png" alt="Img: Instagram"/></li>
             </ul>
