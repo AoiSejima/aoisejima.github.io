@@ -214,11 +214,14 @@ h3 {
     margin-top: 0rem;
     margin-bottom: -0.5rem;
 }
-#about p {
+#about, #email p {
     font-size: 16pt;
-    font-family: poppins, sans-serif;
+    font-family: brandon-grotesque, poppins, sans-serif;
     font-style: normal;
     font-weight: 400;
+}
+#email {
+    margin-top: -8rem;
 }
 #downloadLink {
     text-decoration: underline;

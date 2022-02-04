@@ -345,24 +345,37 @@ h3 {
 }
 #about img:hover {opacity: 1;}
 #about-description li {margin-bottom: 2rem;}
-h6 {
+/* h6 {
     font-size: 20pt;
     font-family: brandon-grotesque, poppins, sans-serif;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 10pt;
-    /* -webkit-text-stroke: 1px rgb(0, 0, 0);
-    -webkit-text-fill-color: rgb(255, 255, 255); */
     text-transform: uppercase;
     margin-top: 0rem;
     margin-bottom: -0.5rem;
     color: rgb(182, 182, 182);
+} */
+h6 {
+    font-size: 16pt;
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 10pt;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-top: 0rem;
+    margin-bottom: -0.5rem;
 }
-#about p {
+#about, #email p {
     font-size: 16pt;
     font-family: brandon-grotesque, poppins, sans-serif;
     font-style: normal;
     font-weight: 400;
+}
+#email {
+    margin-top: -8rem;
 }
 #downloadLink {
     text-decoration: underline;
