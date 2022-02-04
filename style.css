@@ -243,7 +243,9 @@ p {
 .italicise {
     font-family: 'ITC Avant Garde Gothic Std Extra Light Oblique';
 }
-
+#aapi img {
+    width: 25%;
+}
 
 #about {
     display: grid;
