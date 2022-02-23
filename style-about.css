@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    src: local('ITC Avant Garde Gothic Std Extra Light'), url('assets/fonts/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdXLt.woff') format('woff');
+}
+/* @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light Oblique';
+    src: local('ITC Avant Garde Gothic Std Extra Light Oblique'), url('assets/fonts/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdXLtObl.woff') format('woff');
+} */
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium';
+    src: local('ITC Avant Garde Gothic Std Medium'), url('assets/fonts/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdMd.woff') format('woff');
+}
+
+html, body {
+    scroll-behavior: smooth;
+    background: rgb(255, 255, 255);
+    margin: 0;
+    font-family: century-gothic, 'ITC Avant Garde Gothic Std Extra Light', 'ITC Avant Garde Gothic Std Medium', Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: rgb(23, 23, 23);
+    text-decoration: none;
+}
+
+#logo img {
+    float: left;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    width: 5%;
+    transition: all 3s ease-in-out;
+    z-index: 10;
+}
+#logo img:hover {
+    transform: rotate(365deg);
+    -webkit-transform: rotate(365deg);
+}
+
+nav {
+    float: right;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+}
+nav ul {
+    text-align: right;
+}
+nav li {
+    margin-bottom: 2rem;
+}
+#aboutContact {
+    float: right;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 10;
+}
+
+
+.header-text {
+    position: absolute;
+    font-family: century-gothic, 'ITC Avant Garde Gothic Std Extra Light';
+    text-align: center;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#header-h1 {
+    color: black;
+    font-size: 30pt;
+    font-weight: 700;
+    top: 8%;
+}
+#header-p {
+    color: black;
+    font-size: 25pt;
+    font-weight: 400;
+    line-height: 35pt;
+    top: 30%;
+    width: 60%;
+}
+
+
+h2 {
+    font-size: 13pt;
+    text-transform: uppercase;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    color: rgb(148, 148, 148);
+}
+h2:hover {
+    letter-spacing: 4pt;
+    color: black;
+}
+.navContainer ul li.active h2 {
+    font-family: century-gothic, sans-serif;
+    font-weight: 700;
+    letter-spacing: 4pt;
+    /* color: rgb(120, 120, 120); */
+    color: black;
+}
+
+
+#about {
+    margin: -2rem 20rem auto 20rem;
+    padding-top: 5rem;  
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: minmax(5rem, 9rem);
+    grid-gap: 4rem;
+    top: 10rem;
+    justify-items: stretch;
+    box-sizing: border-box;
+}
+#about-img {grid-column: 1/2; grid-row: 1/5;}
+#about-description {grid-column: 2/3; grid-row: 1/5;}
+#about-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#about img:hover {opacity: 1;}
+#about-description li {
+    margin-bottom: 2rem;
+}
+h3 {
+    font-size: 13pt;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    color:rgb(148, 148, 148);
+}
+#about, #email p {
+    font-size: 16pt;
+    line-height: 25pt;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#email {
+    margin-top: -8rem;
+}
+#downloadLink {
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+}
+#downloadLink:hover {
+    letter-spacing: 4pt;
+}
+.icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1.2rem;
+    width: 80%;
+    margin-top: 1rem;
+}
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* #contact {
+    margin-top: 5rem;  
+    margin-bottom: 20rem;
+    background: yellow;
+    padding: 3rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(5rem, 10rem);
+    grid-gap: 3rem;
+    top: 10rem;
+    justify-items: stretch;
+    box-sizing: border-box;
+}
+#contact img:hover {
+    opacity: 1;
+} */

@@ -232,7 +232,7 @@ h2 {
 .processImg-gallery {
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
     justify-items: stretch;
     box-sizing: border-box;
@@ -284,7 +284,7 @@ h2 {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10rem;
+    grid-gap: 5rem;
     justify-items: stretch;
     box-sizing: border-box;
 }
