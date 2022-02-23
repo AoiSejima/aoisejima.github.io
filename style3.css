@@ -34,7 +34,7 @@ br {
     display: block;
 }
 
-#logo img {
+/* #logo img {
     float: left;
     position: fixed;
     top: 2rem;
@@ -46,8 +46,19 @@ br {
 #logo img:hover {
     transform: rotate(365deg);
     -webkit-transform: rotate(365deg);
+} */
+#homeLink {
+    float: left;
+    position: fixed;
+    font-family: century-gothic, sans-serif;
+    text-align: left;
+    font-size: 30pt;
+    font-weight: 700;
+    top: -2rem;
+    left: 2rem;
+    width: 10%;
+    z-index: 10;
 }
-
 nav {
     float: right;
     position: fixed;

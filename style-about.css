@@ -28,7 +28,7 @@ a {
     text-decoration: none;
 }
 
-#logo img {
+/* #logo img {
     float: left;
     position: fixed;
     top: 2rem;
@@ -40,6 +40,13 @@ a {
 #logo img:hover {
     transform: rotate(365deg);
     -webkit-transform: rotate(365deg);
+} */
+#homeLink {
+    float: left;
+    position: fixed;
+    top: 4rem;
+    left: 2rem;
+    z-index: 10;
 }
 
 nav {

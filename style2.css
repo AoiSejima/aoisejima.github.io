@@ -28,7 +28,7 @@ a {
     text-decoration: none;
 }
 
-#logo img {
+/* #logo img {
     float: left;
     position: fixed;
     top: 2rem;
@@ -40,8 +40,14 @@ a {
 #logo img:hover {
     transform: rotate(365deg);
     -webkit-transform: rotate(365deg);
+} */
+#homeLink {
+    float: left;
+    position: fixed;
+    top: 4rem;
+    left: 2rem;
+    z-index: 10;
 }
-
 nav {
     float: right;
     position: fixed;
@@ -66,8 +72,8 @@ nav li {
 
 .header-text {
     position: absolute;
-    font-family: century-gothic, 'ITC Avant Garde Gothic Std Extra Light';
-    text-align: center;
+    font-family: century-gothic, sans-serif;
+    text-align: left;
     width: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -76,15 +82,16 @@ nav li {
     color: black;
     font-size: 30pt;
     font-weight: 700;
-    top: 8%;
+    top: 5%;
 }
 #header-p {
     color: black;
     font-size: 25pt;
     font-weight: 400;
     line-height: 35pt;
-    top: 30%;
-    width: 60%;
+    top: 25%;
+    left: 48rem;
+    width: 50%;
 }
 
 
